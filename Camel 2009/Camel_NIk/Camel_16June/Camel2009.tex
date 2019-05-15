@@ -1,0 +1,349 @@
+%Run makeindex in between compilations.
+
+\documentclass[12pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{makeidx}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{tabularx,colortbl}
+\usepackage{rotating}
+
+\setlength\voffset             {-10mm}
+\setlength\topmargin      {0mm}
+\setlength\headheight     {12pt}
+\setlength\headsep        {10pt}
+\setlength\oddsidemargin  {4.0mm}
+\setlength\evensidemargin {4.0mm}	
+\setlength\textwidth      {160mm}
+\setlength\textheight     {235mm}
+\setlength\parindent      {0pt}
+
+\definecolor{cyan}{rgb}{0,1,1}
+\definecolor{aqua}{rgb}{0.4,0.8,0.66}
+\definecolor{scolor1}{rgb}{0.8,0.9,0.99}
+\definecolor{scolor2}{rgb}{0.9,0.99,0.99}
+
+\def\bt{\begin{tabular}{l>{\columncolor{aqua}}l}}
+\def\btt[#1]{\begin{tabular}{#1}}
+\def\et{\end{tabular}}
+\def\sp{\rule[-0.5cm]{0cm}{1.3cm}}
+\def\spp{\rule[-0.8cm]{0cm}{2cm}}
+\def\wsp{\multicolumn{1}{>{\columncolor{scolor2}}c}{}}
+
+\def\coffee{\textbf{COFFEE}}
+\def\lunch{\textbf{LUNCH}}
+\def\dinner{\textbf{DINNER}}
+\def\official{\textbf{OFFICIAL}}
+
+\setlength\parskip       {\baselineskip}
+\pagestyle{fancy}
+\renewcommand{\title}[1]{
+\begin{tabular*}{\textwidth}[t]{@{}p{\textwidth}}
+\bf #1
+\end{tabular*}}
+
+\makeindex
+
+\begin{document}
+
+\frontmatter
+
+\fancyhead{}
+\fancyfoot{}
+
+\begin{center}
+\vspace{0.5cm}
+REPORT SERIES IN PHYSICS\\
+
+
+\vspace{2.5cm}
+
+{\LARGE BOOK OF  ABSTRACTS}\\
+
+\vspace{2cm}
+
+{\Large CAMEL 2009}\\
+
+\vspace{1cm}
+
+Control of Quantum Dynamics of Atoms,\\
+Molecules and Ensembles by Light 
+
+\vspace{0.5cm}
+
+Nessebar, Hotel Marina Palace, 23-28 June 2009\\
+
+\vspace{2cm}
+
+Edited by the organizers
+
+\vspace{8cm}
+
+UNIVERSITY OF SOFIA\\
+DEPARTMENT OF THEORETICAL PHYSICS\\
+5 JAMES BOURCHIER BLVD.,\\
+1164 SOFIA, BULGARIA\\
+
+\end{center}
+
+\pagebreak
+
+\fancyfoot[CO,CE]{\thepage}
+\textbf{Organizers}
+
+Nikolay Vitanov (chairman)\\
+Svetoslav Ivanov\\
+Andon Rangelov\\
+Boyan Torosov\\
+Genko Vasilev\\
+
+\vspace{1.5cm}
+
+\textbf{Supported by}
+
+?
+
+\pagebreak
+
+{\large Preface}
+
+\vspace{1cm}
+
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+TextTextTextTextTextTextTextTextTextTextText
+
+\vspace{1cm}
+
+Nikolay Vitanov\\
+Chairman of CAMEL 2009
+
+\pagebreak
+\thispagestyle{empty}
+
+\tableofcontents
+%\pagebreak
+\clearpage{\pagestyle{empty}\cleardoublepage}
+%---------------------------------------------------------
+\mainmatter
+
+\fancyhead[CO,CE]{Abstracts}
+\fancyhead[RO,LE]{\thepage}
+\fancyfoot{}
+
+\chapter*{Program}
+\addcontentsline{toc}{chapter}{Program}
+\input{program} 
+
+\newpage
+
+\input{prog.tex}
+
+\newpage
+
+\setcounter{page}{1}
+
+\chapter*{Abstracts}
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Abstracts}
+
+
+\phantomsection 
+\addcontentsline{toc}{section}{Avdeenkov A} 
+\input{./Abstracts/Avdeenkov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Baumert T} 
+\input{./Abstracts/Baumert} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Bergmann K} 
+\input{./Abstracts/Bergmann} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Boradjiev I} 
+\input{./Abstracts/Boradjiev} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Bruner B} 
+\input{./Abstracts/Bruner} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Cartaleva S} 
+\input{./Abstracts/Cartaleva} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Christov I} 
+\input{./Abstracts/Christov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Datta A} 
+\input{./Abstracts/Datta}
+
+\phantomsection 
+\addcontentsline{toc}{section}{De Chiara G} 
+\input{./Abstracts/DeChiara} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Dreischuh A} 
+\input{./Abstracts/Dreischuh} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Drewsen M} 
+\input{./Abstracts/Drewsen} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Entin V} 
+\input{./Abstracts/Entin} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Garraway B} 
+\input{./Abstracts/Garraway} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Genes C} 
+\input{./Abstracts/Genes} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Gerdjikov V} 
+\input{./Abstracts/Gerdjikov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Guerin S} 
+\input{./Abstracts/Guerin} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Halfmann T} 
+\input{./Abstracts/Halfmann} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Hensinger W} 
+\input{./Abstracts/Hensinger} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Ivanov P} 
+\input{./Abstracts/IvanovP} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Ivanov S} 
+\input{./Abstracts/IvanovS} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Jauslin H} 
+\input{./Abstracts/Jauslin} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Kuhn A} 
+\input{./Abstracts/Kuhn} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Lange W} 
+\input{./Abstracts/Lange} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Lazarou C} 
+\input{./Abstracts/Lazarou} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Maniscalco S} 
+\input{./Abstracts/Maniscalco} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Mullins T} 
+\input{./Abstracts/Mullins} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Nikoghosyan G} 
+\input{./Abstracts/Nikoghosyan} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Paspalakis E} 
+\input{./Abstracts/Paspalakis} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Petrovic J} 
+\input{./Abstracts/Petrovic} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Piilo J} 
+\input{./Abstracts/Piilo} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Pillet P} 
+\input{./Abstracts/Pillet} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Praxmeyer L} 
+\input{./Abstracts/Praxmeyer} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Rangelov A} 
+\input{./Abstracts/Rangelov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Serafini A} 
+\input{./Abstracts/Serafini} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Shapiro M} 
+\input{./Abstracts/Shapiro} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Shore B} 
+\input{./Abstracts/Shore} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Singer K} 
+\input{./Abstracts/Singer} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Slavov D} 
+\input{./Abstracts/Slavov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Stenholm S} 
+\input{./Abstracts/Stenholm} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Todorov P} 
+\input{./Abstracts/Todorov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Torosov B} 
+\input{./Abstracts/Torosov} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Valiente M} 
+\input{./Abstracts/Valiente} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Vasilev G} 
+\input{./Abstracts/Vasilev} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Wollenhaupt M} 
+\input{./Abstracts/Wollenhaupt} 
+
+\phantomsection 
+\addcontentsline{toc}{section}{Wunderlich C} 
+\input{./Abstracts/Wunderlich} 
+
+
+\newpage
+\fancyhead[CO,CE]{Author Index}
+\printindex
+
+
+\end{document}

@@ -1,0 +1,99 @@
+\def\coffee{{coffee}}
+\def\lunch{{LUNCH}}
+\def\dinner{{DINNER}}
+\def\official{{OFFICIAL}}
+\def\korolkova{\multirow{2}{*}{\begin{tabular}{c} Korolkova\end{tabular}}}
+\def\bergmann{\dense\btt[c] \textbf{Special}\\\textbf{Lecture}\\Bergmann\et}
+\def\cameldinner{\dense\btt[c]\textbf{CAMEL}\\\textbf{dinner}\\\et}
+%\def\boattrip{\multirow{7}{*}{\begin{tabular}{c}\textbf{BOAT}\\ \textbf{TRIP}\end{tabular}}}
+\def\boattrip{\multirow{7}{*}{\begin{sideways}\textbf{trip (13:30-18:30)}\end{sideways}}}
+%\def\boattrip{\multirow{7}{*}{\begin{sideways}\textbf{social event}\end{sideways}\\\begin{sideways}(13:30-18:30)\end{sideways}}}
+\def\time{\multirow{2}{*}{17:00-17:40}}
+\def\Garraway{\multirow{2}{*}{Garraway}}
+\def\Peters{\multirow{2}{*}{Peters}}
+\def\Salo{\multirow{2}{*}{Salo}}
+\def\Sola{\multirow{2}{*}{Sola}}
+\def\theend{\multirow{7}{*}{\hspace{0.5cm}\textbf{END}\hspace{0.5cm}}}
+\def\mrdinner{\multirow{2}{*}{\dinner}}
+\def\posters{\textbf{posters}}
+\def\confdinner{\textbf{conf. dinner}}
+\def\hsp{\hspace{10mm}}
+
+
+%\def\boxx{\multirow{2}{*}{\begin{tabular}{c|c} Rousseaux & Kim \\ Boradjiev & Kirova \end{tabular}}}
+\def\Wollenhaupt{\begin{tabular}{c} \vspace{-3mm} \\ Wollenhaupt \end{tabular}}
+\def\Chakhmakhchyan{\footnotesize Chakhmakhchyan \normalsize}
+
+\def\BoradjievKirova{\begin{tabular}{c} Boradjiev \vspace{-3mm} \\ Kirova \end{tabular}}
+
+\renewcommand{\tabcolsep}{2mm}
+\renewcommand{\arraystretch}{1.6}
+\newcolumntype{a}{>{\columncolor{scolor1}}c}
+\def\dense{\renewcommand{\arraystretch}{1}}
+
+\renewcommand{\arraystretch}{1.6}
+
+\def\db#1{\multirow{2}{*}{#1}}
+
+\vspace{-1mm} %
+\begin{center}
+{\Large \textsf{\textbf{CAMEL X Programme}}}\\ \vspace{5mm}
+\end{center}
+
+%\hspace{-15cm} %
+\vspace{0cm}
+{\small
+\begin{center}
+\btt[|c|c|c|c|c|c|]
+\hline \textbf{Time} &
+\dense \textbf{Mon, 23} &
+\dense \textbf{Tue, 24} &
+\dense \textbf{Wed, 25} &
+\dense \textbf{Thu, 26} &
+\dense \textbf{Fri, 27}                                                                                    \\\hline
+
+\db{09:00-09:40}    & \db{Wollenhaupt}    & \db{Halfmann}      & \db{Montemezzani}  & \db{Pillet}         & \db{Maniscalco}          \\
+&&&&&\\\hline
+
+\db{09:40-10:20}    & \db{Bruner}         & \db{Kuhn}          & \db{Neshev}        & \db{Walther}        & \db{Piilo}               \\
+&&&&&\\\hline
+
+     10:20-10:50    & \coffee             & \coffee            & \coffee            & \coffee             & \coffee              \\\hline
+
+
+\db{10:50-11:30}    & \db{Wunderlich}     & \db{Drewsen}       & \db{Singer}        & \db{Jauslin}        & \db{Gawlik}             \\
+&&&&&\\\hline
+
+\db{11:30-12:10}    & \db{Hensinger}      & \db{Hennrich}      & \db{Retzker}       & \db{Gu\'erin}       & S. Ivanov              \\ \cline{6-6}
+&&&&                                                                                                      & P. Ivanov                    \\\hline
+
+12:10-12:40         & Takahashi           & Lo                 & Tillmann           & Brion               & Caruso             \\\hline
+&&&&&\\\hline
+
+%                    &                     &                    &                    &                     &                     \\\hline
+
+                    &                     &                    &\boattrip           &                     &                     \\\cline{1-3}\cline{5-6}
+
+\hsp  16:30         & \coffee             & \coffee            &                    & \coffee             &  \coffee            \\\cline{1-3}\cline{5-6}
+
+\time               & \db{Peters}         & \Garraway          &                    & \Sola               &  Kirova              \\\cline{6-6}
+
+                    &                     &                    &                    &                     &  Rousseaux              \\\cline{1-3}\cline{5-6}
+
+17:40-18:00         & Bayer               & Heinze             &                    & Chang               & T. Ivanova               \\\cline{1-3}\cline{5-6}
+
+18:00-18:20         & Braun               & Mazzera            &                    & Grankin             & D. Ivanov               \\\cline{1-3}\cline{5-6}
+
+18:20-18:40         & Torosov             & Schraft            &                    & \Salo               & Simeonov              \\\cline{1-4}\cline{6-6}
+
+18:40-19:00         & Rangelov            & Mieth              &                    & &                    \\\cline{1-4}\cline{5-6}
+
+19:00-19:20         & Genov               &                    &                    &                     &                    \\\cline{1-4}\cline{5-6}
+
+\hsp  20:30         &                     &                    &                    &\confdinner          &                     \\\hline %cline{1-4}\cline{5-5}
+
+%\hsp  21:00    &                 &                & {\bf Shore}    &                 &                     \\\hline
+
+\et
+\end{center}
+}

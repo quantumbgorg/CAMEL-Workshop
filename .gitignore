@@ -1,11 +1,8 @@
-*.pdf
-*.gz
-*.toc
-*.aux
-*.idx
-*.log
-*.out
-*.exe
-*.lnk
-*.xls
-*.xlsx
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!*.tex
+
+!*/

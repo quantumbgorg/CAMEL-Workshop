@@ -1,0 +1,385 @@
+\documentclass[12pt]{report}
+%\usepackage[T1]{fontenc}
+\usepackage{amssymb}
+%\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{makeidx}
+%\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{tabularx,colortbl}
+\usepackage{rotating}
+
+%\setlength\voffset             {-10mm} \setlength\topmargin      {0mm} \setlength\headheight     {12pt} \setlength\headsep
+%{10pt} \setlength\oddsidemargin  {4.0mm} \setlength\evensidemargin {4.0mm}   \setlength\textwidth      {150mm}
+%\setlength\textheight     {230mm} \setlength\parindent      {0pt}
+
+\definecolor{cyan}{rgb}{0,1,1}
+\definecolor{aqua}{rgb}{0.4,0.8,0.66}
+\definecolor{scolor1}{rgb}{0.8,0.9,0.99}
+\definecolor{scolor2}{rgb}{0.9,0.99,0.99}
+
+\def\bt{\begin{tabular}{l>{\columncolor{aqua}}l}}
+\def\btt[#1]{\begin{tabular}{#1}}
+\def\et{\end{tabular}}
+\def\sp{\rule[-0.5cm]{0cm}{1.3cm}}
+\def\spp{\rule[-0.8cm]{0cm}{2cm}}
+\def\wsp{\multicolumn{1}{>{\columncolor{scolor2}}c}{}}
+
+
+%\textwidth=165true mm \textheight=230true mm %usually have 230 for A4
+%\oddsidemargin=5true mm  \evensidemargin=\oddsidemargin \topmargin=-15true mm
+
+\textwidth=165true mm \textheight=250true mm %usually have 230 for A4
+\oddsidemargin=5true mm  \evensidemargin=\oddsidemargin \topmargin=-30true mm
+\setlength\parindent      {0pt}
+
+
+\setlength\parskip       {\baselineskip} %\pagestyle{fancy}
+\renewcommand{\title}[1]{\begin{tabular*}{\textwidth}[t]{@{}p{\textwidth}} \bf #1 \end{tabular*}\vspace{-3mm}}
+
+\makeindex
+\usepackage{fix-cm}
+
+\def\email{\vspace{-4mm} \emph{email}:\ }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\thispagestyle{empty}
+
+%\frontmatter
+
+%\fancyhead{}
+%\fancyfoot{}
+
+%\ \vspace{25mm}
+\begin{center}
+
+ {\LARGE \textsf{\textbf{Control of Quantum Dynamics of Atoms,}\\ \vspace{2mm} \textbf{Molecules and Ensembles by Light} }}\\ \vspace{2mm}
+{\Large \emph{Hotel Marina Palace, Nessebar, Bulgaria,\ 23-28 June 2009}}
+
+ \vspace{3mm}
+
+\hrule
+
+% \hline
+
+%\begin{center}
+%\line(1,0){\textwidth}
+%\end{center}
+
+
+
+\vspace{25mm}
+
+{\fontsize{40}{48}\selectfont \textsf{\textbf{CAMEL V}}}\\
+\vspace{5mm}
+{\LARGE \emph{Fifth International Workshop}}\\
+
+\vspace{25mm}
+
+{\fontsize{36}{40}\selectfont \textsf{\textbf{BOOK OF  ABSTRACTS}}}\\
+
+\vspace{15mm}
+
+\Large{\textbf{Edited by} \\ Svetoslav Ivanov and Nikolay Vitanov}
+
+%\includegraphics[width=140mm,height=67mm]{img01dim.jpg}
+\vspace{65mm}
+
+\vspace{8mm}
+
+{\Large \textbf{Supported by}
+
+Bulgarian NSF Grant D002-90/08\\
+European Commission networks EMALI and FASTQUAST
+
+}
+
+%Edited by the organizers
+
+%\vspace{8cm}
+
+%UNIVERSITY OF SOFIA\\
+%DEPARTMENT OF THEORETICAL PHYSICS\\
+%5 JAMES BOURCHIER BLVD.,\\
+%1164 SOFIA, BULGARIA\\
+
+\end{center}
+
+\newpage
+
+ \pagenumbering{roman}
+%\fancyfoot[CO,CE]{\thepage}
+\ \vspace{20mm}
+\begin{center}
+
+\Large{ \textsc{Local Organizing Committee}}
+
+{\large
+
+Nikolay Vitanov (chairman),\ Andon Rangelov (vice-chairman)\\
+Genko Vasilev,\ Peter Ivanov,\ Boyan Torosov,\ Svetoslav Ivanov \\
+Elica Kyoseva,\ Iavor Boradjiev,\ Genko Genov \\
+Emiliya Dimova,\ Lidia Slavova,\ Lora Constantinova
+
+\vspace{15mm}
+
+Quantum Optics and Quantum Information Group \\
+Theoretical Physics Division \\
+Department of Physics\\
+Sofia University ``St. Kliment Ohridski''\\
+5 James Bourchier blvd, 1164 Sofia, Bulgaria \\
+http://camel.quantum-bg.org/
+
+}
+%{\large Preface}
+
+%\vspace{1cm}
+
+
+%\vspace{1cm}
+
+\end{center}
+\newpage
+
+%\pagebreak
+\thispagestyle{empty}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\fontsize{14}{15}\selectfont
+
+\tableofcontents
+%\pagebreak
+%\clearpage{\pagestyle{empty}\cleardoublepage}
+%---------------------------------------------------------
+%\mainmatter
+
+%\fancyhead[CO,CE]{Abstracts}
+%\fancyhead[RO,LE]{\thepage}
+%\fancyfoot{}
+
+%\chapter*{Program}
+%\addcontentsline{toc}{chapter}{Program}
+%\newpage
+
+
+\newpage
+\input{participants}
+
+\hoffset=8mm
+\setlength\linewidth{158mm}
+\input{prog.tex}
+\newpage
+\hoffset=0mm
+
+\newpage
+
+%\setcounter{page}{1}
+
+%\chapter*{List of Abstracts} %\thispagestyle{empty}
+\ \vspace{10cm}
+
+\thispagestyle{empty}
+\begin{center}
+{\fontsize{32}{36}\selectfont \textsf{\textbf{List of Abstracts}}}
+\end{center}
+\addcontentsline{toc}{chapter}{List of Abstracts}
+\pagebreak
+
+%\vspace{8mm}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\phantomsection
+\addcontentsline{toc}{section}{Avdeenkov A}
+\input{Avdeenkov}
+
+\phantomsection \addcontentsline{toc}{section}{Baumert T}
+\input{Baumert}
+
+\phantomsection
+\addcontentsline{toc}{section}{Bergmann K}
+\input{Bergmann}
+
+\phantomsection
+\addcontentsline{toc}{section}{Boradjiev I}
+\input{Boradjiev}
+
+\phantomsection
+\addcontentsline{toc}{section}{Bruner B}
+\input{Bruner}
+
+\phantomsection \addcontentsline{toc}{section}{Cartaleva S}
+\input{Cartaleva}
+
+\phantomsection
+\addcontentsline{toc}{section}{Christov I}
+\input{Christov}
+
+\phantomsection \addcontentsline{toc}{section}{Datta A}
+\input{Datta}
+
+\phantomsection
+\addcontentsline{toc}{section}{de Chiara G}
+\input{deChiara}
+
+\phantomsection
+\addcontentsline{toc}{section}{Dreischuh A}
+\input{Dreischuh}
+
+\phantomsection
+\addcontentsline{toc}{section}{Drewsen M}
+\input{Drewsen}
+
+\phantomsection
+\addcontentsline{toc}{section}{Entin V}
+\input{Entin}
+
+\phantomsection
+\addcontentsline{toc}{section}{Garraway B}
+\input{Garraway}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Genes C}
+\input{Genes}
+
+\phantomsection \addcontentsline{toc}{section}{Gerdjikov V}
+\input{Gerdjikov}
+
+\phantomsection
+\addcontentsline{toc}{section}{Gu\'erin S}
+\input{Guerin}
+
+\phantomsection
+\addcontentsline{toc}{section}{Halfmann T}
+\input{Halfmann}
+
+\phantomsection
+\addcontentsline{toc}{section}{Hensinger W}
+\input{Hensinger}
+
+\phantomsection
+\addcontentsline{toc}{section}{Ivanov P}
+\input{IvanovP}
+
+\phantomsection \addcontentsline{toc}{section}{Ivanov S}
+\input{IvanovS}
+
+\phantomsection \addcontentsline{toc}{section}{Jauslin H}
+\input{Jauslin}
+
+\phantomsection \addcontentsline{toc}{section}{Kuhn A}
+\input{Kuhn}
+
+\phantomsection
+\addcontentsline{toc}{section}{Lange W}
+\input{Lange}
+
+\phantomsection
+\addcontentsline{toc}{section}{Lazarou C}
+\input{Lazarou}
+
+\phantomsection
+\addcontentsline{toc}{section}{Maniscalco S}
+\input{Maniscalco}
+
+\newpage
+
+\phantomsection \addcontentsline{toc}{section}{Mullins T}
+\input{Mullins}
+
+\phantomsection
+\addcontentsline{toc}{section}{Nikoghosyan G}
+\input{Nikoghosyan}
+
+\phantomsection \addcontentsline{toc}{section}{Petrovic J}
+\input{Petrovic}
+
+\phantomsection
+\addcontentsline{toc}{section}{Piilo J}
+\input{Piilo}
+
+\phantomsection
+\addcontentsline{toc}{section}{Pillet P}
+\input{Pillet}
+
+\phantomsection \addcontentsline{toc}{section}{Praxmeyer L}
+\input{Praxmeyer}
+
+\phantomsection
+\addcontentsline{toc}{section}{Rangelov A}
+\input{Rangelov}
+
+\phantomsection
+\addcontentsline{toc}{section}{Serafini A}
+\input{Serafini}
+
+\phantomsection
+\addcontentsline{toc}{section}{Shapiro M}
+\input{Shapiro}
+
+\phantomsection \addcontentsline{toc}{section}{Shore B}
+\input{Shore}
+
+\phantomsection
+\addcontentsline{toc}{section}{Singer K}
+\input{Singer}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Slavov D}
+\input{Slavov}
+
+\phantomsection \addcontentsline{toc}{section}{Stenholm S}
+\input{Stenholm}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Todorov P}
+\input{Todorov}
+
+\phantomsection
+\addcontentsline{toc}{section}{Torosov B}
+\input{Torosov}
+
+\newpage
+
+\phantomsection
+\addcontentsline{toc}{section}{Valiente M}
+\input{Valiente}
+
+\phantomsection \addcontentsline{toc}{section}{Vasilev G}
+\input{Vasilev}
+
+\phantomsection
+\addcontentsline{toc}{section}{Wollenhaupt M}
+\input{Wollenhaupt}
+
+\phantomsection
+\addcontentsline{toc}{section}{Wunderlich C}
+\input{Wunderlich}
+
+{\large
+
+\newpage
+%\fancyhead[CO,CE]{Author Index}
+\addcontentsline{toc}{chapter}{Index} \printindex }
+
+
+}
+
+\newpage
+\input{program}
+
+\end{document}

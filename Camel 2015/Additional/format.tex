@@ -1,0 +1,62 @@
+%\usepackage[T1]{fontenc}
+\usepackage{amssymb,amstext}
+%\usepackage[latin1]{inputenc}
+\usepackage{hyperref}
+%\usepackage{times}
+\usepackage{graphicx}
+\usepackage{makeidx}
+%\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{tabularx,colortbl}
+\usepackage{rotating}
+
+\usepackage{pgf}%,pgfarrows,pgfnodes,pgfautomata,pgfheaps,pgfshade} %set of packages for pdf import.
+%\pgfdeclareimage[interpolate=true,width=1.25\columnwidth]{program}{./Additional/prog_preliminary}
+
+\def\unisofia{Department of Physics, Sofia University, 5 James Bourchier Blvd, 1164 Sofia, Bulgaria}
+\def\electronicinstitute{Institute of Electronics, Bulgarian Academy of Sciences, 72 Tsarigradsko chauss\'{e}e Blvd., 1784 Sofia, Bulgaria}
+\def\ssinstitute{Institute of Solid State Physics, Bulgarian Academy of Sciences, 72 Tsarigradsko chauss\'{e}e, 1784 Sofia, Bulgaria}
+\def\dijon{Laboratoire Interdisciplinaire Carnot de Bourgogne, UMR CNRS 5209, BP 47870, 21078 Dijon, France}
+\def\dijon{Laboratoire Interdisciplinaire Carnot de Bourgogne, 9 av. Alain Savary, 21078 Dijon, France}
+\def\darmstadt{Institute of Applied Physics, Technical University of Darmstadt, Hochschulstra{\ss}e 6, 64289 Darmstadt, Germany}
+
+%\setlength\voffset{-10mm}
+%\setlength\topmargin{0mm}
+%\setlength\headheight{12pt}
+%\setlength\headsep{10pt}
+%\setlength\oddsidemargin{4.0mm}
+%\setlength\evensidemargin{4.0mm}
+%\setlength\textwidth{150mm}
+%\setlength\textheight{230mm}
+%\setlength\parindent{0pt}
+
+\definecolor{cyan}{rgb}{0,1,1}
+\definecolor{aqua}{rgb}{0.4,0.8,0.66}
+\definecolor{scolor1}{rgb}{0.8,0.9,0.99}
+\definecolor{scolor2}{rgb}{0.9,0.99,0.99}
+
+\def\bt{\begin{tabular}{l>{\columncolor{aqua}}l}}
+\def\btt[#1]{\begin{tabular}{#1}}
+\def\et{\end{tabular}}
+\def\sp{\rule[-0.5cm]{0cm}{1.3cm}}
+\def\spp{\rule[-0.8cm]{0cm}{2cm}}
+\def\wsp{\multicolumn{1}{>{\columncolor{scolor2}}c}{}}
+
+\def\email{\vspace{-4mm} \emph{email}:\ }
+\def\ket#1{\left|#1\right\rangle}
+
+\def\vsp{\vspace{-4.5mm}}
+
+\textwidth=166true mm
+\textheight=241true mm %usually have 230 for A4  %was 250
+\oddsidemargin=5true mm
+\evensidemargin=\oddsidemargin
+\topmargin=-20true mm % was -30
+\setlength\parindent{0pt}
+
+
+\setlength\parskip{\baselineskip}
+\renewcommand{\title}[1]{\begin{tabular*}{\textwidth}[t]{@{}p{\textwidth}} \bf #1 \end{tabular*}\vspace{-3mm}}
+
+\makeindex
+\usepackage{fix-cm}
