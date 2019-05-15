@@ -1,0 +1,11 @@
+*.pdf
+*.gz
+*.toc
+*.aux
+*.idx
+*.log
+*.out
+*.exe
+*.lnk
+*.xls
+*.xlsx
